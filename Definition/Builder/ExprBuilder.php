@@ -68,6 +68,21 @@ class ExprBuilder
     }
 
     /**
+     * Sets a closure to use as tests.
+     *
+     * The default one tests if the value is false.
+     *
+     * @return $this
+     */
+    public function ifFalse(?\Closure $closure = null): static
+    {
+        $this->ifPart = $closure ?? static fn ($v) => false === $v;
+        $this->allowedTypes = self::TYPE_ANY;
+
+        return $this;
+    }
+
+    /**
      * Tests if the value is a string.
      *
      * @return $this

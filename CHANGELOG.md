@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+7.3
+---
+
+ * Add `ExprBuilder::ifFalse()`
+
 7.2
 ---
 
