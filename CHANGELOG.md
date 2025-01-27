@@ -5,6 +5,7 @@ CHANGELOG
 ---
 
  * Add `ExprBuilder::ifFalse()`
+ * Add support for info on `ArrayNodeDefinition::canBeEnabled()` and `ArrayNodeDefinition::canBeDisabled()`
 
 7.2
 ---
